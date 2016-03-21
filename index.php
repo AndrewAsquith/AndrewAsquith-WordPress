@@ -10,7 +10,7 @@
 get_header(); ?>
 		<div id="main" class="container">
 
-			<div id="content">
+			<div id="content" class="col-md-8">
 			<?php get_template_part( 'loop', 'index' ); ?>
 			</div><!-- #content -->
 			<?php get_sidebar(); ?>

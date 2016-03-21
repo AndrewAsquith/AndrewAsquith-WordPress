@@ -21,7 +21,7 @@
 
 	?></title>
 <link rel="profile" href="http://gmpg.org/xfn/11" />
-<link rel="stylesheet" type="text/css" media="all" href="//andrew-asquith.com/common/styles/base.css" />
+<link rel="stylesheet" type="text/css" media="all" href="//andrew-asquith.com/common/css/bootstrap.v3.3.5.min.css" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="shortcut icon" href="//andrew-asquith.com/common/favicon.ico" type="image/x-icon" />
 <link rel="icon" href="//andrew-asquith.com/common/favicon.ico" type="image/x-icon" />
@@ -43,18 +43,21 @@
 </head>
 <body <?php body_class('main-body'); ?>>
 <div id="page" class="hfeed">
-	
-  <div id="navigation" class="container">
+<nav class="navbar navbar-default">
+  <div id="navigation" class="container-fluid">
+	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu-navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+    </button>
     <div class="skip-link screen-reader-text">
       <a href="#content" title="<?php esc_attr_e( 'Skip to content', 'andrewasquith' ); ?>"><?php _e( 'Skip to content', 'andrewasquith' ); ?></a>
     </div>
 		<?php wp_nav_menu( array('theme_location' => 'primary' )); ?>
 	</div><!-- div.navigation -->
-
-  <div id="header" class="container">
-    <div id="logo">
-      <img src="//andrew-asquith.com/common/images/aabanner.png" alt="Logo" title="Andrew Asquith"/>
-    </div>	
+</nav>
+  <div id="header" class="jumbotron">
     <div id="site-name-and-slogan">
 			<?php $heading_tag = ( is_home() || is_front_page() ) ? 'h1' : 'div'; ?>
 				<<?php echo $heading_tag; ?> id="site-name">

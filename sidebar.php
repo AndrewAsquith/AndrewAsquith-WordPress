@@ -1,4 +1,4 @@
-				<div id="sidebar" role="complementary">
+				<div id="sidebar" role="complementary" class="col-md-4">
 				
 					
           <ul>

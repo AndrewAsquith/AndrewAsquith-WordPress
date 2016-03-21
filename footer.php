@@ -1,10 +1,10 @@
-  <div id="footer" class="container">
-		<div id="footer-content">
-      <p class="footer-text">&copy; <a href="http://www.AndrewAsquith.com" title="Andrew Asquith">Andrew Asquith</a> | <a href="/privacy-policy/" title="Privacy Policy">Privacy Policy</a> | <a href="/terms-of-use/" title="Terms of Use">Terms of Use</a></p>
-    </div>
+  <div id="footer" class="row">
+      <p class="footer-text">&copy; <a href="http://www.AndrewAsquith.com" title="Andrew Asquith" rel="nofollow">Andrew Asquith</a> | <a href="/privacy-policy/" title="Privacy Policy">Privacy Policy</a> | <a href="/terms-of-use/" title="Terms of Use">Terms of Use</a></p>
   </div>
 </div> <!-- div.Page -->
 <?php wp_footer(); ?>
+<script src="//andrew-asquith.com/common/js/jquery.v1.11.3.min.js"></script>
+<script src="//andrew-asquith.com/common/js/bootstrap.v3.3.5.min.js"></script>
 <!-- Piwik --> 
 <script type="text/javascript">
  var pkBaseURL = (("https:" == document.location.protocol) ? "https://analytics.andrewasquith.com/" : "http://analytics.andrewasquith.com/");
